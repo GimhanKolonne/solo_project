@@ -1,5 +1,4 @@
 import React from "react";
-import { TbBrandMeta } from "react-icons/tb";
 import { CiInstagram } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
