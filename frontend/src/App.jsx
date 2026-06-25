@@ -1,18 +1,18 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import UserLayout from './components/layouts/UserLayout'
-
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UserLayout from './components/layouts/UserLayout';
+import Home from './pages/Home';
 
 const App = () => {
   return (
-    <BrowserRouter> 
-    <Routes>
-      <Route path="/" element={<UserLayout/>}>
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UserLayout />}>
+           <Route index element={<Home />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;
